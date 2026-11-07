@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10170f" />
+  <meta name="description" content="Machhalishahar Premier League Season 2 — player registration, cricket, and community." />
+  <title>MPL — Machhalishahar Premier League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> SEASON 2 PLAYER REGISTRATION IS OPEN <a href="#register">Join the league <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="MPL home"><span class="brand-mark"><span>M</span><b>PL</b><i>✦</i></span><span class="brand-name">MACHHALISHAHAR<small>PREMIER LEAGUE</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav"><a href="#about">The league</a><a href="#experience">The experience</a><a href="#register">Registration</a><a href="#contact">Contact</a><a class="nav-cta" href="#register">Register now <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Cricket batter playing under stadium lights"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE CITY. THE SPORT. ONE LEAGUE.</div>
+        <h1>THIS IS<br/>OUR <em>GAME.</em></h1>
+        <p class="hero-sub">The Machhalishahar Premier League is back.<br/>Season 2 starts with you.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#register">Register as a player <span>↗</span></a><a class="text-link" href="#about"><span class="play-icon">▶</span> Discover MPL</a></div>
+      </div>
+      <div class="hero-stamp"><span>SEASON</span><strong>02</strong><span>LET’S PLAY</span></div>
+      <div class="hero-bottom"><span>01 / THE NEXT CHAPTER</span><span class="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span><span>EST. FOR THE LOVE OF CRICKET</span></div>
+    </section>
+    <section class="ticker" aria-label="League motto"><div class="ticker-track"><span>ONE CITY</span><i>✳</i><span>ONE TEAM</span><i>✳</i><span>ALL HEART</span><i>✳</i><span>ONE CITY</span><i>✳</i><span>ONE TEAM</span><i>✳</i><span>ALL HEART</span><i>✳</i></div></section>
+    <section class="about section-pad" id="about">
+      <div class="section-kicker"><span>01</span> ABOUT MPL</div>
+      <div class="about-grid"><div><h2>MORE THAN<br/>A <em>GAME.</em></h2><div class="short-rule"></div></div><div class="about-copy"><p class="lead">A local league with a big-game spirit.</p><p>Machhalishahar Premier League brings players, families, and cricket fans together around the game we love. Season 2 is your chance to step up, represent your talent, and become part of the story.</p><a class="arrow-link" href="#register">Be part of Season 2 <span>↗</span></a></div></div>
+      <div class="feature-row"><article class="feature"><span class="feature-icon">✳</span><h3>PLAY YOUR WAY</h3><p>Batter, bowler, all-rounder or keeper — every role belongs on this pitch.</p></article><article class="feature"><span class="feature-icon">↗</span><h3>LOCAL PRIDE</h3><p>A community-first league built around Machhalishahar and its players.</p></article><article class="feature"><span class="feature-icon">◎</span><h3>YOUR MOMENT</h3><p>Bring your game, your energy, and your love for cricket to Season 2.</p></article></div>
+    </section>
+    <section class="photo-break" id="experience"><img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=2000&q=85" alt="Cricket ground ready for a match" loading="lazy"/><div class="photo-overlay"></div><div class="photo-caption"><span>THE LIGHTS ARE ON.</span><h2>MAKE IT<br/><em>COUNT.</em></h2><p>One pitch. Every possibility.</p></div><div class="photo-vertical">MACHHALISHAHAR PREMIER LEAGUE · SEASON 02</div></section>
+    <section class="register section-pad" id="register">
+      <div class="section-kicker"><span>02</span> PLAYER REGISTRATION</div>
+      <div class="register-heading"><div><h2>YOUR NAME.<br/>YOUR <em>GAME.</em></h2></div><p>Fill in your player details to get started.<br/><span>Fields marked * are required.</span></p></div>
+      <form id="registration-form">
+        <div class="form-section-title"><span>01</span> PLAYER DETAILS</div>
+        <div class="form-grid">
+          <label class="field span-2">Player’s full name *<input name="playerName" placeholder="As you’d like it on the team sheet" required /></label>
+          <label class="field">Father / guardian name *<input name="fatherName" placeholder="Full name" required /></label>
+          <label class="field">Date of birth *<input name="dob" type="date" required /></label>
+          <label class="field span-2">Address *<input name="address" placeholder="House / street / village" required /></label>
+          <label class="field">District *<input name="district" placeholder="Your district" required /></label>
+          <label class="field">PIN code *<input name="pincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="6-digit PIN code" required /></label>
+          <label class="field">Player contact number *<input name="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit phone number" required /></label>
+          <label class="field">Player photo<input name="photo" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" /></label>
+        </div>
+        <div class="form-section-title"><span>02</span> YOUR GAME</div>
+        <div class="form-grid">
+          <fieldset class="field-set span-2"><legend>Player role * <small>Select all that apply</small></legend><div class="choice-row"><label class="choice"><input type="checkbox" name="role" value="Batsman"/><span>BATSMAN</span></label><label class="choice"><input type="checkbox" name="role" value="Bowler"/><span>BOWLER</span></label><label class="choice"><input type="checkbox" name="role" value="All-rounder"/><span>ALL-ROUNDER</span></label><label class="choice"><input type="checkbox" name="role" value="Wicket keeper"/><span>WICKET KEEPER</span></label></div></fieldset>
+          <fieldset class="field-set"><legend>Dress size *</legend><div class="choice-row sizes"><label class="choice"><input type="radio" name="size" value="S" required/><span>S</span></label><label class="choice"><input type="radio" name="size" value="M"/><span>M</span></label><label class="choice"><input type="radio" name="size" value="L"/><span>L</span></label><label class="choice"><input type="radio" name="size" value="XL"/><span>XL</span></label><label class="choice"><input type="radio" name="size" value="XXL"/><span>XXL</span></label></div></fieldset>
+          <label class="field">Aadhaar number<input name="aadhaar" inputmode="numeric" pattern="[0-9 ]{12,14}" maxlength="14" placeholder="12-digit number" /></label>
+          <fieldset class="field-set"><legend>Batter hand</legend><div class="choice-row"><label class="choice"><input type="radio" name="batterHand" value="Right hand"/><span>RIGHT</span></label><label class="choice"><input type="radio" name="batterHand" value="Left hand"/><span>LEFT</span></label></div></fieldset>
+          <fieldset class="field-set"><legend>Bowler hand</legend><div class="choice-row"><label class="choice"><input type="radio" name="bowlerHand" value="Right hand"/><span>RIGHT</span></label><label class="choice"><input type="radio" name="bowlerHand" value="Left hand"/><span>LEFT</span></label></div></fieldset>
+          <fieldset class="field-set span-2"><legend>Pace bowling</legend><div class="choice-row"><label class="choice"><input type="checkbox" name="pace" value="Fast"/><span>FAST</span></label><label class="choice"><input type="checkbox" name="pace" value="Medium"/><span>MEDIUM</span></label></div></fieldset>
+          <fieldset class="field-set span-2"><legend>Spin bowling</legend><div class="choice-row"><label class="choice"><input type="checkbox" name="spin" value="Off break"/><span>OFF BREAK</span></label><label class="choice"><input type="checkbox" name="spin" value="Leg break"/><span>LEG BREAK</span></label><label class="choice"><input type="checkbox" name="spin" value="Left arm orthodox"/><span>LEFT ARM ORTHODOX</span></label><label class="choice"><input type="checkbox" name="spin" value="Chinaman"/><span>CHINAMAN</span></label></div></fieldset>
+        </div>
+        <div class="form-section-title"><span>03</span> PAYMENT &amp; DECLARATION</div>
+        <div class="payment-method-toggle" role="group" aria-label="Choose a payment method">
+          <button class="payment-method-button" type="button" data-payment-method="upi" aria-pressed="true">Pay using UPI app</button>
+          <button class="payment-method-button" type="button" data-payment-method="qr" aria-pressed="false">Pay on QR</button>
+        </div>
+        <div class="payment-panel span-2">
+          <div class="payment-option payment-upi" data-payment-option="upi">
+            <span class="payment-label">PAY USING UPI APP</span><h3>OPEN YOUR UPI APP</h3>
+            <p>Tap below to open an installed UPI app, or copy the UPI ID to pay manually.</p>
+            <a class="button button-lime upi-launch" href="upi://pay?pa=959830888%40slc&amp;pn=Machhalishahar%20Premier%20League&amp;cu=INR">Open UPI app <span>↗</span></a>
+            <div class="upi-id"><span>UPI ID</span><strong>959830888@slc</strong></div>
+          </div>
+          <div class="payment-option payment-qr" data-payment-option="qr" hidden>
+            <img src="assets/payment-qr.jpeg" alt="UPI payment QR code for 959830888@slc" />
+            <div class="payment-instructions"><span class="payment-label">PAY ON QR</span><h3>SCAN TO PAY</h3><p>Scan this QR code with any UPI app to complete your payment.</p><div class="upi-id"><span>UPI ID</span><strong>959830888@slc</strong></div></div>
+          </div>
+        </div>
+        <div class="form-grid payment-upload-grid"><label class="field span-2">Payment confirmation image / screenshot *<input name="paymentConfirmation" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" required /><small class="field-hint">Required: upload a screenshot of your successful payment (JPG, PNG or WEBP, max 2 MB).</small></label></div>
+        <div class="declaration"><strong>RELEASE / DISCLAIMER · DECLARATION FOR ALL</strong><p>I, the parent/guardian of the player named above, request their participation in the tournament. I agree that the player will follow all rules and regulations, cooperate, and maintain discipline. I understand the organizers are not responsible for incidents or injuries during practice or the tournament.</p><label class="agree"><input type="checkbox" name="agree" required/><span>I have read and agree to the declaration above. *</span></label></div>
+        <div class="signature-grid"><label class="field">Guardian’s signature / name<input name="guardianSignature" placeholder="Type full name as signature" required /></label><label class="field">Player’s signature / name<input name="playerSignature" placeholder="Type full name as signature" required /></label></div>
+        <div class="form-submit"><button class="button button-lime" type="submit">Submit player registration <span>↗</span></button><span class="form-note">Please contact the organizers to complete your registration.</span></div>
+        <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+        <div class="form-success" id="form-success" role="status" aria-live="polite"><b>Thanks for stepping up.</b><span></span></div>
+      </form>
+      <dialog class="submit-dialog" id="submit-dialog" aria-labelledby="submit-dialog-title">
+        <span class="wait-spinner" data-wait-spinner aria-label="Please wait"></span>
+        <div class="submit-dialog-mark" aria-hidden="true">MPL</div>
+        <h3 id="submit-dialog-title" data-dialog-title>Submitting your form</h3>
+        <p data-dialog-message>Please wait while we save your player registration and images.</p>
+        <button class="button button-lime" type="button" data-dialog-close hidden>Close</button>
+      </dialog>
+    </section>
+    <section class="contact" id="contact"><div class="contact-image"></div><div class="contact-content"><div class="section-kicker"><span>03</span> TALK TO MPL</div><h2>LET’S GET<br/><em>YOU IN.</em></h2><p>Questions about player registration? Give the league team a call.</p><a class="phone-link" href="tel:8933937037">+91 89339 37037 <span>↗</span></a><a class="phone-link" href="tel:7985813488">+91 79858 13488 <span>↗</span></a><div class="contact-rule"></div><span class="contact-label">MACHHALISHAHAR PREMIER LEAGUE</span></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark"><span>M</span><b>PL</b><i>✦</i></span><span class="brand-name">MACHHALISHAHAR<small>PREMIER LEAGUE</small></span></a><span class="footer-note">SEASON 02 · MADE FOR THE LOVE OF CRICKET</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
