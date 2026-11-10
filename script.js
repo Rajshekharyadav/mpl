@@ -19,6 +19,7 @@ const roleInputs = [...form.querySelectorAll('input[name="role"]')];
 const submitButton = form.querySelector('button[type="submit"]');
 const statusMessage = document.querySelector('#form-status');
 const successMessage = document.querySelector('#form-success');
+const whatsappJoinButton = document.querySelector('[data-whatsapp-join]');
 const paymentMethodButtons = [...document.querySelectorAll('[data-payment-method]')];
 const paymentOptions = [...document.querySelectorAll('[data-payment-option]')];
 const DEBUG_MODE = new URLSearchParams(window.location.search).get('debug') === '1';
@@ -188,6 +189,7 @@ function submitToAppsScript(payload) {
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
   successMessage.classList.remove('show');
+  whatsappJoinButton.hidden = true;
   statusMessage.hidden = true;
   if (!form.reportValidity()) return;
 
@@ -253,6 +255,7 @@ form.addEventListener('submit', async (event) => {
     successMessage.classList.add('show');
     dialogTitle.textContent = 'Registration submitted';
     waitSpinner.hidden = true;
+    whatsappJoinButton.hidden = false;
     dialogMessage.textContent = registrationId
       ? `Your form has been submitted successfully. Registration ID: ${registrationId}. You can close this message now.`
       : 'Your form has been submitted successfully. You can close this message now.';
